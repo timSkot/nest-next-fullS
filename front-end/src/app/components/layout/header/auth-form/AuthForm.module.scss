@@ -1,0 +1,17 @@
+.wrapper {
+	@apply relative inline-flex;
+
+	.form {
+		@apply shadow-black p-4 absolute right-2 w-60 z-20 rounded-lg;
+		top: calc(100% + 1.4rem);
+		background-color: #272532;
+
+		.register {
+			@apply text-gray-400 opacity-40 block text-center w-full;
+		}
+	}
+}
+
+.button-wr {
+	@apply mt-5 mb-1 text-center;
+}
