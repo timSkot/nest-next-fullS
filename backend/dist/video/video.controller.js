@@ -32,7 +32,7 @@ let VideoController = class VideoController {
         return this.videoService.getMostPopularByViews();
     }
     async getVideo(id) {
-        return this.videoService.byId(+id, true);
+        return this.videoService.byId(+id);
     }
     async createVideo(id) {
         return this.videoService.create(id);

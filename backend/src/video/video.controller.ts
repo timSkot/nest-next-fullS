@@ -38,7 +38,7 @@ export class VideoController {
 
 	@Get(':id')
 	async getVideo(@Param('id') id: string) {
-		return this.videoService.byId(+id, true)
+		return this.videoService.byId(+id)
 	}
 
 	@HttpCode(200)

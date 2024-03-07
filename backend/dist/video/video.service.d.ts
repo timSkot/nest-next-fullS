@@ -4,7 +4,7 @@ import { VideoDto } from './video.dto';
 export declare class VideoService {
     private readonly videoRepository;
     constructor(videoRepository: Repository<VideoEntity>);
-    byId(id: number, isPublic?: boolean): Promise<VideoEntity>;
+    byId(id: number): Promise<VideoEntity>;
     update(id: number, dto: VideoDto): Promise<{
         name: string;
         isPublic: boolean;

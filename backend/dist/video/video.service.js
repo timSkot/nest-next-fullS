@@ -21,7 +21,7 @@ let VideoService = class VideoService {
     constructor(videoRepository) {
         this.videoRepository = videoRepository;
     }
-    async byId(id, isPublic = false) {
+    async byId(id) {
         const video = await this.videoRepository.findOne({
             where: {
                 id: id
